@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "AppserviceName": {
-            "value": "app"
+            "value": "app-sample-check"
         },
         "AppserviceplanName": {
-            "value": "appplan1" 
+            "value": "appplan-sample-check" 
         }
     }
 }
