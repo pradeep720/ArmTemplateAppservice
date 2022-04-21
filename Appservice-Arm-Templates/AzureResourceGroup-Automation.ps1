@@ -4,13 +4,14 @@ Param(
 	[Parameter(Mandatory=$true)]$resourceGroupName
 )
 
-# $location = 'East US'
-# $resourceGroupName = 'chosen-staging-APIM-RG'
+# $location = 'Australia Central'
+# $resourceGroupName = 'pradeep-RG'
 
-Write-Host "Starting to Create the Key Vault" 
+Write-Host "Starting to Create the ResourceGroup" 
 
 # Create new resource group if not exists.
 $rgAvail = Get-AzResourceGroup -Name $resourceGroupName -Location $location -ErrorAction SilentlyContinue
+
 if(!$rgAvail){
     New-AzResourceGroup -Name $resourceGroupName -Location $location
 }
