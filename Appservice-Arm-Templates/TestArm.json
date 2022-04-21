@@ -2,26 +2,25 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "siteName": {
+        "AppserviceplanName": {
             "type": "string",
             "metadata": {
-                "description": "The name of the App Service."
-        }
+                "description": "description"
+            }
+        },
 
-    },
-        "svcPlanName": {
+        "AppserviceName": {
             "type": "string",
             "metadata": {
-                "description": "The name of the App Service plan."
-                }
+                "description": "description"
+            }
         }
-        
     },
     "functions": [],
     "variables": {},
     "resources": [
         {
-            "name": "[parameters('svcPlanName')]",
+            "name": "[parameters('AppserviceplanName')]",
             "type": "Microsoft.Web/serverfarms",
             "apiVersion": "2020-12-01",
             "location": "[resourceGroup().location]",
@@ -30,30 +29,27 @@
                 "capacity": 1
             },
             "tags": {
-                "displayName": "appServicePlan1"
+                "displayName": "[parameters('AppserviceplanName')]"
             },
             "properties": {
-                "name": "appServicePlan1"
+                "name": "[parameters('AppserviceplanName')]"
             }
         },
         {
-            "name": "[parameters('siteName')]",
+            "name": "[parameters('AppserviceName')]",
             "type": "Microsoft.Web/sites",
             "apiVersion": "2020-12-01",
             "location": "[resourceGroup().location]",
             "tags": {
-                "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/appServicePlan1')]": "Resource",
-                "displayName": "webApp1"
+                "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', parameters('AppserviceplanName'))]": "Resource",
+                "displayName": "[parameters('AppserviceName')]"
             },
             "dependsOn": [
-                "[resourceId('Microsoft.Web/serverfarms', 'appServicePlan1')]"
+                "[resourceId('Microsoft.Web/serverfarms', parameters('AppserviceplanName'))]"
             ],
             "properties": {
-                "name": "webApp1",
-                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', 'appServicePlan1')]",
-                "siteconfig" : {
-                "netFrameworkVersion": "v5.0"
-                }
+                "name": "[parameters('AppserviceName')]",
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('AppserviceplanName'))]"
             }
         }
     ],
