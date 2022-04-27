@@ -1,0 +1,18 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+              - task: AzurePowerShell@5
+                inputs:
+                  azureSubscription: 'devops team service connection'
+                  ScriptType: 'FilePath'
+                  ScriptPath: '$(System.DefaultWorkingDirectory)/drop-arm/AzureResourceGroup-Automation.ps1'
+                  ScriptArguments: '-resourceGroupName pradeep-RG -location AustraliaCentral'
+                  azurePowerShellVersion: 'LatestVersion'
