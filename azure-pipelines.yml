@@ -8,7 +8,8 @@ trigger: none
 pool:
   vmImage: ubuntu-latest
 
-steps:
+steps:        
+              - checkout: self     
               - task: AzurePowerShell@5
                 inputs:
                   azureSubscription: 'devops team service connection'
