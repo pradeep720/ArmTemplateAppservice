@@ -13,6 +13,6 @@ steps:
                 inputs:
                   azureSubscription: 'devops team service connection'
                   ScriptType: 'FilePath'
-                  ScriptPath: '$(System.DefaultWorkingDirectory)/drop-arm/AzureResourceGroup-Automation.ps1'
+                  ScriptPath: '$(Agent.BuildDirectory)/s/ArmTemplateAppservice/Appservice-Arm-Templates/AzureResourceGroup-Automation.ps1'
                   ScriptArguments: '-resourceGroupName pradeep-RG -location AustraliaCentral'
                   azurePowerShellVersion: 'LatestVersion'
