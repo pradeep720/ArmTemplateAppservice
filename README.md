@@ -6,10 +6,7 @@
    - also have parameter
    
    
- '''bash
- 
- u6djyix2fn3abwtbjzz7c2yabmflqkl3z5dspwexjxbvah3nsdha
+```bash
+C:\myagent\config.cmd
 
-u6djyix2fn3abwtbjzz7c2yabmflqkl3z5dspwexjxbvah3nsdha
-
-'''
+```
