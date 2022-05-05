@@ -6,7 +6,7 @@
    - also have parameter
    
    
-```bash
+```
 C:\myagent\config.cmd
 
 ```
