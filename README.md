@@ -6,7 +6,6 @@
    - also have parameter
    
    
-```
+``` powershell
 C:\myagent\config.cmd
-
 ```
