@@ -1,6 +1,6 @@
 # ArmTemplateAppservice
 
-## It contains arm template for app services
+## It contains arm template for app services template and parameters
 
 ### webhook check
 
