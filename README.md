@@ -7,6 +7,7 @@
    - it have app service template 
    - also have parameter
    - check webhook trigger 
+   - it working now
    
 ``` powershell
 C:\myagent\config.cmd
