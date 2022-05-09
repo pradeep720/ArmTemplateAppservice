@@ -11,5 +11,9 @@
    - cool
    
 ``` powershell
-C:\myagent\config.cmd
+checking on 
+```
+   
+``` bash
+work or not
 ```
