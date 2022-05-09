@@ -6,7 +6,7 @@
 
    - it have app service template 
    - also have parameter
-   - check webhook trigger 122311
+   - check webhook trigger 
    
 ``` powershell
 C:\myagent\config.cmd
