@@ -5,7 +5,6 @@
 ### webhook check
   
    - it have app service template 
-   - also have parameter
    - check webhook trigger 
 ```
 checking on webhook once again 
