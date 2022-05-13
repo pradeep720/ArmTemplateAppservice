@@ -4,7 +4,7 @@
 
    - it have app service template 
    - check webhook trigger 
-   - it trigger because webhook added 
+   - it trigger because webhook add
 ```
 checking on webhook once again ...
 ```
