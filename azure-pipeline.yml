@@ -1,1 +1,21 @@
-#trigger: none
+trigger: 
+ tags:
+     include:
+         - release.*
+
+pr: 
+  branches:
+      include:
+          - main
+
+pool:
+  vmImage: ubuntu-latest
+    
+steps:
+    - task: PowerShell@2
+      inputs:
+        targetType: 'inline'
+        script: |
+          # Write your PowerShell commands here.
+          
+          Write-Host "Hello World"
