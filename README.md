@@ -9,7 +9,7 @@
    - added new branch
    - name develop
    - going down 1off1
-   - fa footablal
+   - fa football
 ```
 checking on webhook once again ...
 ```
