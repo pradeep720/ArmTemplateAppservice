@@ -9,7 +9,7 @@
    - added new branch
    - check on windows  
    - commmit-msg.py saved this forma t
-   - one line added
+   - one line add
  
 ```
 checking on webhook once again ...
