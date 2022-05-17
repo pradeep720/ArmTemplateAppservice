@@ -7,7 +7,7 @@
    - it trigger because webhook add
    - cool to part of the commit
    - added new branch
-   - check on windo
+   - check on windows
    - commmit-msg.py saved this format 
  
 ```
