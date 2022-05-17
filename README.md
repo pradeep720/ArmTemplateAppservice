@@ -9,6 +9,8 @@
    - added new branch
    - check on windows  commit-msg`
    - commmit-msg.py saved this format
+   - added one line
+   - added second line
  
 ```
 checking on webhook once again ...
