@@ -8,7 +8,8 @@
    - cool to part of the commit
    - added new branch
    - check on windows  
-   - commmit-msg.py saved this format
+   - commmit-msg.py saved this forma t
+   - one line added
  
 ```
 checking on webhook once again ...
