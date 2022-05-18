@@ -5,12 +5,7 @@
    - it have app service template 
    - check webhook trigger 
    - it trigger because webhook add
-   - cool to part of the commit
-   - added new branch
-   - name develop
-   - going down 1off1
-   - ffa
-   - added one line
+   
 ```
 checking on webhook once again ...
 ```
