@@ -5,3 +5,7 @@
 - one line added 
 - second line added
 
+
+# after cloned repo 
+
+- git config core.hookspath .githooks
